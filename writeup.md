@@ -11,16 +11,15 @@ The goals of this project are the following:
 * Manipulate Images in accordance with Network Limitation
 * Understand the limitation of the current network architecutre
 
+[image1]: ./examples/model.png "model plot"
 
 ----
 ### Network Architecture ###
 
 My Network consists of 3 x encoders and 3x decoders as a Fully-Convolutional Neural Network. In the encoder, I used Separable Convolutions and Batch Normalization to train the network faster. In the decoder, I used Bilinear Upsampling to realize transposed convolutions, and used Layer Concatenation to carry out Skip connections.
 
-
-
-
-
+(model plot)
+![alt text][image1]
 
 
 ### Choose Parameters ###
