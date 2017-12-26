@@ -11,7 +11,7 @@ The goals of this project are the following:
 * Manipulate Images in accordance with Network Limitation
 * Understand the limitation of the current network architecutre
 
-[image1]: ./examples/model.png "model plot"
+[image1]: ./code/model.png "model plot"
 
 ----
 ### Network Architecture ###
