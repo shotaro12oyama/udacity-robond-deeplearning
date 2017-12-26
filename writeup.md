@@ -11,7 +11,7 @@ The goals of this project are the following:
 * Manipulate Images in accordance with Network Limitation
 * Understand the limitation of the current network architecutre
 
-[image1]: ./examples/model.png "model plot"
+[image1]: ./code/model.png "model plot"
 
 ----
 ### Network Architecture ###
@@ -24,11 +24,11 @@ My Network consists of 3 x encoders and 3x decoders as a Fully-Convolutional Neu
 
 ### Choose Parameters ###
 
-|  | Optimizer | Learning Rate | Batch Size | Number of Epochs | Steps per Epoch | Validation Steps per Epoch | Number of training Data |
-|----|----|----|----|----|----|----|----|
-| No.1 | Adam | 0.003 | 32 | | | | |
-| No.2 | Adam | 0.002 | 32 | | | | | 
-| No.3 | Adam | 0.0015| 32 | | | | |
+|  | Optimizer | Learning Rate | Batch Size | Number of Epochs | Steps per Epoch | Score |
+|----|----|----|----|----|----|----|
+| No.1 | Adam | 0.002 | 32 | 100 | 200 | 0.406 |
+| No.2 | Adam | 0.002 | 32 | 50  | 50  | 0.391 |
+| No.3 | Adam | 0.0015| 32 | 50  | 50  | 0.370 |
 
 * Optimizer (Adam & Nadam)
 * Learning Rates
