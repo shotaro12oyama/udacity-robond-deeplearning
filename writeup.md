@@ -12,6 +12,7 @@ The goals of this project are the following:
 * Understand the limitation of the current network architecutre
 
 [image1]: ./code/model.png "model plot"
+[image2]: ./code/learning_history.png "learning history"
 
 ----
 ### Network Architecture ###
@@ -26,13 +27,18 @@ My Network consists of 3 x encoders and 3x decoders as a Fully-Convolutional Neu
 
 |  | Optimizer | Learning Rate | Batch Size | Number of Epochs | Steps per Epoch | Score |
 |----|----|----|----|----|----|----|
-| No.1 | Adam | 0.002 | 32 | 100 | 200 | 0.406 |
-| No.2 | Adam | 0.002 | 32 | 50  | 50  | 0.391 |
-| No.3 | Adam | 0.0015| 32 | 50  | 50  | 0.370 |
+| No.1 | Adam | 0.0020 | 32 | 100 | 200 | 0.406 |
+| No.2 | Adam | 0.0020 | 32 | 50  | 50  | 0.391 |
+| No.3 | Adam | 0.0025 | 32 | 50  | 50  | 0.375 |
+| No.4 | Adam | 0.0015 | 32 | 50  | 50  | 0.370 |
 
-* Optimizer (Adam & Nadam)
-* Learning Rates
+* Optimizer: I selected Adam Optimizer, which was relatively fast and good performance.
+* Learning Rates: I selected 0.002 after testing several times with different values.
+* Batch Size: I changed the size in the range of 32-64, but it did not affect a lot.
+* Number of Epochs and Steps per Epoch: 
 
+
+![alt text][image2]
 
 
 
