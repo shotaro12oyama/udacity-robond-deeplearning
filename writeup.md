@@ -25,7 +25,7 @@ My Network consists of 3 x encoders and 3x decoders as a Fully-Convolutional Neu
 ### Choose Parameters ###
 
 |  | Optimizer | Learning Rate | Batch Size | Number of Epochs | Steps per Epoch | Score |
-|----|----|----|----|----|----|----|----|
+|----|----|----|----|----|----|----|
 | No.1 | Adam | 0.002 | 32 | 100 | 200 | 0.406 |
 | No.2 | Adam | 0.002 | 32 | 50  | 50  | 0.391 |
 | No.3 | Adam | 0.0015| 32 | 50  | 50  | 0.370 |
