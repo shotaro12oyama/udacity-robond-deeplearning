@@ -35,15 +35,12 @@ My Network consists of 3 x encoders and 3x decoders as a Fully-Convolutional Neu
 * Optimizer: I selected Adam Optimizer, which was relatively fast and good performance.
 * Learning Rates: I selected 0.002 after testing several times with different values.
 * Batch Size: I changed the size in the range of 32-64, but it did not affect a lot.
-* Number of Epochs and Steps per Epoch: 
-
+* Number of Epochs and Steps per Epoch: As I increased the sizes, the score was improved gradually.
 
 ![alt text][image2]
 
 
-
-**Ideas for Improving your Score
-
-Collect more data from the sim. Look at the predictions think about what the network is getting wrong, then collect data to counteract this. Or improve your network architecture and hyperparameters. 
+### The limitation of current Network and how to improve ###
+I should try to collect more data from the simulator. Also, I may be able to add more layer for encoder and decoder, in order to deal with more complicate model.
 
 
