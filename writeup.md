@@ -23,6 +23,15 @@ My Network consists of 3 x encoders and 3x decoders as a Fully-Convolutional Neu
 ![alt text][image1]
 
 
+#### 1 by 1 convolution layer and fully connected layer ####
+
+#### Encoding and Decoding ####
+
+
+
+### How the model can work well for another object ###
+
+
 ### Choose Parameters ###
 
 |  | Optimizer | Learning Rate | Batch Size | Number of Epochs | Steps per Epoch | Score |
@@ -40,7 +49,7 @@ My Network consists of 3 x encoders and 3x decoders as a Fully-Convolutional Neu
 ![alt text][image2]
 
 
-### The limitation of current Network and how to improve ###
+### Future Enhancement ###
 I should try to collect more data from the simulator. Also, I may be able to add more layer for encoder and decoder, in order to deal with more complicate model.
 
 
