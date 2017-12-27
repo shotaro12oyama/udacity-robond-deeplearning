@@ -25,18 +25,15 @@ My Network consists of 3 x encoders and 3x decoders as a Fully-Convolutional Neu
 
 #### 1 by 1 convolution layer and fully connected layer ####
 
-fully connected (FC) layer to a convolutional layer we gain some form of localization if we look at where we have more activations.The idea is that if we choose our new last conv layer to be big enough we will have this localization effect scaled up to our input image size.
+1x1 convolution helped in reducing the dimensionality of the layer. A fully-connected layer of the same size would result in the same number of features. Also, replacement of fully-connected layers with convolutional layers presents an added advantage that during inference, images of any size can be fed into the trained network.
 
-
-
-
-
-
-
-source: https://leonardoaraujosantos.gitbooks.io/artificial-inteligence/content/image_segmentation.html
+source: 
+http://iamaaditya.github.io/2016/03/one-by-one-convolution/
+https://classroom.udacity.com/nanodegrees/nd209/parts/c199593e-1e9a-4830-8e29-2c86f70f489e/modules/cac27683-d5f4-40b4-82ce-d708de8f5373/lessons/032b020f-7c02-46dc-9266-eaee3eb76eb7/concepts/7754d15f-28ca-47f9-9b20-19ae90581829
 
 
 #### Encoding and Decoding ####
+
 
 
 
