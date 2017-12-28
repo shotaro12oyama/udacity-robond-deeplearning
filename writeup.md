@@ -27,16 +27,19 @@ My Network consists of 3 x encoders and 3x decoders as a Fully-Convolutional Neu
 
 #### 1 by 1 convolution layer and fully connected layer ####
 
-1x1 convolution helped in reducing the dimensionality of the layer. A fully-connected layer of the same size would result in the same number of features. Also, replacement of fully-connected layers with convolutional layers presents an added advantage that during inference, images of any size can be fed into the trained network.
+
+1x1 convolution has advantage that it maintains the spatial information, comparing to fully connected layer. Also, it can help reducing the dimensionality of the layer. A fully-connected layer of the same size would result in the same number of features. Also, replacement of fully-connected layers with convolutional layers presents an added advantage that during inference, images of any size can be fed into the trained network.
 
 source: 
 http://iamaaditya.github.io/2016/03/one-by-one-convolution/
 https://classroom.udacity.com/nanodegrees/nd209/parts/c199593e-1e9a-4830-8e29-2c86f70f489e/modules/cac27683-d5f4-40b4-82ce-d708de8f5373/lessons/032b020f-7c02-46dc-9266-eaee3eb76eb7/concepts/7754d15f-28ca-47f9-9b20-19ae90581829
 
 
+
 #### Encoding, Decoding and Skip connection ####
 
-Encoder plays a role of classification by abstracting features from several window size. However, it does not preserve spatial information. By using 1 by 1 convlution, which is mentioned above, we can connect the output of encoder into decoder, which upscale the output of encoder to the original image size. Simultaneously, Skip connection can use information from multiple resolution scales, and can make the segmentation more precise.
+Encoder plays a role of classification by abstracting features from several window size. Via multiple layers, encoder starts by finding simple patterns in the first layer and can gradually learn to understand more and more complex shapes and structures in the deeper layers. However, it loses spatial information gradually. After using 1x1 convolution, it can be connected to decoder, which is transposed convolution from the encoder. Layer by layer, decoder makes segmentation in more detail. Also, via skip connection, the network can use information from multiple resolution scales, and can make the segmentation more precise.
+
 
 source:
 https://www.quora.com/What-is-an-Encoder-Decoder-in-Deep-Learning/answer/Christian-Baumgartner-3?srid=ison
