@@ -43,8 +43,9 @@ https://www.quora.com/What-is-an-Encoder-Decoder-in-Deep-Learning/answer/Christi
 https://classroom.udacity.com/nanodegrees/nd209/parts/c199593e-1e9a-4830-8e29-2c86f70f489e/modules/cac27683-d5f4-40b4-82ce-d708de8f5373/lessons/032b020f-7c02-46dc-9266-eaee3eb76eb7/concepts/f3e2bc90-1d30-4367-84d2-35d069ab5152
 
 
-### How the model can work well for another object ###
+#### How the model can work well for another object ####
 
+As the picture below, the model trained with the existing data detected human object only. If I need to recognize another object such as dog and cat, it seems that I should prepare the object data and train the networks with the data specifically.
 
 ![alt text][image2]
 
@@ -67,7 +68,7 @@ https://classroom.udacity.com/nanodegrees/nd209/parts/c199593e-1e9a-4830-8e29-2c
 
 
 ### Future Enhancement ###
-I should try to collect more data from the simulator. Also, I may be able to add more layer for encoder and decoder, in order to deal with more complicate model.Especially, 
+I should try to collect more data from the simulator. Also, I may be able to add more layer for encoder and decoder, in order to deal with more complicate model. Or, using max-pooling indices for upsampling like Segnet, i may get better performance.
 
 source:
 https://arxiv.org/pdf/1511.00561.pdf
