@@ -11,9 +11,9 @@ The goals of this project are the following:
 * Manipulate Images in accordance with Network Limitation
 * Understand the limitation of the current network architecutre
 
-[image1]: ./code/model.png "model plot"
-[image2]: ./code/learning_history.png "learning history"
-[image3]: ./code/segmentation_image.png "segmentation image"
+[image1]: ./example/model.png "model plot"
+[image2]: ./example/segmentation_image.png "segmentation image"
+[image3]: ./example/learning_history.png "learning history"
 
 
 ----
@@ -46,6 +46,7 @@ https://classroom.udacity.com/nanodegrees/nd209/parts/c199593e-1e9a-4830-8e29-2c
 ### How the model can work well for another object ###
 
 
+![alt text][image2]
 
 
 ### Choose Parameters ###
@@ -62,7 +63,7 @@ https://classroom.udacity.com/nanodegrees/nd209/parts/c199593e-1e9a-4830-8e29-2c
 * Batch Size: I changed the size in the range of 32-64, but it did not affect a lot.
 * Number of Epochs and Steps per Epoch: As I increased the sizes, the score was improved gradually.
 
-![alt text][image2]
+![alt text][image3]
 
 
 ### Future Enhancement ###
